@@ -25,3 +25,7 @@
   width:50%;
   display:flex;
 }
+
+.texto-actvidades p {
+  text-align: center;
+}
