@@ -29,3 +29,79 @@
 .texto-actvidades p {
   text-align: center;
 }
+
+.contenedor-imagenes-activades {
+  display:block;
+}
+
+@media only screen and (min-width: 768px) {
+   /* For desktop: */
+   .enlaces-desktop {
+    display:block;
+  }
+
+  .contenedor-imagenes-activades {
+    display:none;
+  }
+
+  .contenedor-titulo-actividades {
+    background:#fff;
+    color:#4a4a4a;
+    padding:20px;
+    border-bottom: 1px solid #9994945e;
+  }
+
+  .seccion-imagenes {
+    background:#fff;
+    padding:20px;
+    width:100%;
+    height:500px;
+    display:flex;
+    align-items: center;
+    
+  }
+
+  .tarjeta-actividades {
+    width:33%;
+    height:400px;
+    margin-right: 10px;
+    border-radius: 10px;
+    overflow:hidden;
+    border: 1px solid #9994945e;
+  }
+
+  .tarjeta-cabecera {
+    width:100%;
+    height:300px;
+  }
+
+  .tarjeta-cabecera img {
+    object-fit:cover;
+    width:100%;
+    height:100%;
+  }
+
+  .tarjeta-texto {
+    display:flex;
+    width:100%;
+    height:50px;
+    align-items: center;
+    justify-content:center;
+  }
+
+  .tarjeta-vermas {
+    border-top:1px solid #9994945e;
+    display:flex;
+    width:100%;
+    height:50px;
+    align-items: center;
+    justify-content:center;
+    font-weight: bold;
+    color:#ab1912;
+  }
+
+  .tarjeta-vermas a:hover {
+    color: #000;
+    cursor: pointer;
+  }
+}
