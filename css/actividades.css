@@ -1,0 +1,27 @@
+.contenedor-titulo-actividades{
+  padding: 15px;
+  background:#ab1912;
+  color:#fff;
+}
+
+.contenedor-imagenes-activades {
+  width:100%;
+  height:auto;
+  display: flex;
+}
+
+.imagen-actividades {
+  width:50%;
+  height:250px;
+}
+
+.imagen-actividades img {
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.texto-actvidades {
+  width:50%;
+  display:flex;
+}

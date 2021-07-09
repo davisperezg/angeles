@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="esS">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/contactanos.css">
+  <title>Contactanos</title>
+</head>
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/logo.png"/>
+    </a>
+  </div>
+  <div class="enlaces centrar-items">
+    <div class="hamburguesa" >
+      <button class="btn-icon" id="idBtnH" onclick="mostrarContainerHamburguesa()">
+        <svg id="idValue" class="svg-icon" viewBox="0 0 20 20">
+          <path d="M10,1.445c-4.726,0-8.555,3.829-8.555,8.555c0,4.725,3.829,8.555,8.555,8.555c4.725,0,8.555-3.83,8.555-8.555C18.555,5.274,14.725,1.445,10,1.445 M10,17.654c-4.221,0-7.654-3.434-7.654-7.654c0-4.221,3.433-7.654,7.654-7.654c4.222,0,7.654,3.433,7.654,7.654C17.654,14.221,14.222,17.654,10,17.654 M14.39,10c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,9.55,14.39,9.752,14.39,10 M14.39,12.702c0,0.247-0.203,0.449-0.45,0.449H6.06c-0.248,0-0.45-0.202-0.45-0.449c0-0.248,0.203-0.451,0.45-0.451h7.879C14.187,12.251,14.39,12.454,14.39,12.702 M14.39,7.298c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,6.848,14.39,7.051,14.39,7.298"></path>
+        </svg>
+      </button>
+      <button class="btn-icon" id="idBtnX" onclick="ocultarContainerHamburguesa()">
+        <svg class="svg-icon" viewBox="0 0 20 20">
+          <path d="M10.185,1.417c-4.741,0-8.583,3.842-8.583,8.583c0,4.74,3.842,8.582,8.583,8.582S18.768,14.74,18.768,10C18.768,5.259,14.926,1.417,10.185,1.417 M10.185,17.68c-4.235,0-7.679-3.445-7.679-7.68c0-4.235,3.444-7.679,7.679-7.679S17.864,5.765,17.864,10C17.864,14.234,14.42,17.68,10.185,17.68 M10.824,10l2.842-2.844c0.178-0.176,0.178-0.46,0-0.637c-0.177-0.178-0.461-0.178-0.637,0l-2.844,2.841L7.341,6.52c-0.176-0.178-0.46-0.178-0.637,0c-0.178,0.176-0.178,0.461,0,0.637L9.546,10l-2.841,2.844c-0.178,0.176-0.178,0.461,0,0.637c0.178,0.178,0.459,0.178,0.637,0l2.844-2.841l2.844,2.841c0.178,0.178,0.459,0.178,0.637,0c0.178-0.176,0.178-0.461,0-0.637L10.824,10z"></path>
+        </svg>
+      </button>
+    </div> 
+  </div>
+</header> 
+<body>
+  <!-- ENLACES EN HAMBURGUESA - SOLO VISIBLE EN CELULARES -->
+  <div class="contenedor-hamburguesa" id="idContainerHamburguesa">
+    <div class="seccion-enlaces">
+      <div class="item-enlaces-hamburguesa">
+        <a href="./nosotros.html">
+          <h1>NOSOTROS</h1>
+        </a>
+      </div>
+      <div class="item-enlaces-hamburguesa">
+        <a href="./como-ayudar.html">
+          <h1>COMO AYUDAR ?</h1>
+        </a>
+      </div>
+      <div class="item-enlaces-hamburguesa">
+        <a href="./actividades.html">
+          <h1>ACTIVIDADES</h1>
+        </a>
+      </div>
+      <div class="item-enlaces-hamburguesa">
+        <a href="./contactanos.html">
+          <h1>CONTACTANOS</h1>
+        </a>
+      </div>
+    </div>
+    
+  </div>
+  <!-- CONTENEDOR -->
+  <div class="contenedor">
+    <div class="contenedor-contactanos">
+      <div class="contenedor-titulo-contactanos">
+        <h1>Formulario de registro</h1>
+      </div>
+      <div class="contenedor-input-contactanos">
+        <input  class="input" placeholder="Ingrese sus nombres"/>
+        <input  class="input" placeholder="Ingrese sus apellidos"/>
+        <input  class="input" placeholder="Ingrese su correo"/>
+        <input  class="input" placeholder="Tienes duda al respecto ?"/>
+      </div>
+      <div class="terminos">
+        <p>Estoy de acuerdo con <a>Términos y condiciones</a></p>
+      </div>
+
+      <div class="registro">
+        <button class="btnRegistro">Registrar</button>
+      </div>
+
+      <div class="pregunta">
+        <p>¿Ya tienes una cuenta?</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+      const mostrarContainer = document.getElementById("idContainerHamburguesa");
+      const idBtnX = document.getElementById("idBtnX");
+      const idBtnH = document.getElementById("idBtnH");
+
+    function mostrarContainerHamburguesa() {
+      if(mostrarContainer.style.display === "block"){
+        mostrarContainer.style.display = "none";
+      }else{
+        mostrarContainer.style.display = "block";
+        idBtnX.style.display = "block";
+        idBtnH.style.display = "none";
+      } 
+    }
+
+    function ocultarContainerHamburguesa(){
+      if(mostrarContainer.style.display === "block"){
+        mostrarContainer.style.display = "none";
+        idBtnX.style.display = "none";
+        idBtnH.style.display = "block";
+      }else{
+        mostrarContainer.style.display = "block";
+        idBtnX.style.display = "none";
+        idBtnH.style.display = "block";
+      } 
+    }
+  </script>
+</body>
+<footer>
+  <div class="redes">
+    <div class="seccion-uno "> 
+        <div class="redes-seccion-cabecera centrar-contenido">
+          <h2>SÍGUENOS</h2>
+        </div>
+        <div class="redes-seccion-cuerpo">
+            <div class="redes-seccion-cuerpo-item centrar-contenido alinear-items">
+              <div class="redes-icono">
+                <img src="./icons/bxl-facebook-square.svg"/>
+              </div>
+              <div class="redes-texto">
+                <p>Siguenos en facebook</p>
+              </div>
+            </div>
+          <div class="redes-seccion-cuerpo-item centrar-contenido alinear-items">
+            <div class="redes-icono">
+              <img src="./icons/bxl-instagram-alt.svg"/>
+            </div>
+            <div class="redes-texto">
+              <p>Siguenos en Instagram</p>
+            </div>
+          </div> 
+        </div>
+    </div>
+     <div class="seccion-dos"> 
+      <div class="redes-seccion-cabecera centrar-contenido">
+        <h2>CONTÁCTANOS</h2>  
+      </div>
+      <div class="redes-seccion-cuerpo">
+        <div class="redes-seccion-cuerpo-item centrar-contenido alinear-items">
+          <div class="redes-icono">
+            <img src="./icons/gmail.svg"/>
+          </div>
+          <div class="redes-texto">
+            <p>aaarenales2015@gmail.com</p>
+          </div>
+        </div>
+        <div class="redes-seccion-cuerpo-item centrar-contenido alinear-items">
+          <div class="redes-icono">
+            <img src="./icons/phone-call.svg"/>
+          </div>
+          <div class="redes-texto">
+            <p>950910651</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="copyright centrar-contenido alinear-items">
+    ©2021 Todos los derechos reservados
+  </div>
+</footer>
+</html>

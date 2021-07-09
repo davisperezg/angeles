@@ -1,0 +1,19 @@
+.contenedor-ayudar {
+  width:100%;
+}
+
+.contenedor-titulo-ayudar {
+  width:100%;
+  background:#ab1912;
+  color:#fff;
+  padding:20px;
+}
+
+.contenedor-video-ayudar {
+  width:100%;
+  background:#000;
+}
+
+.contenedor-video-ayudar iframe {
+  border:none;
+}

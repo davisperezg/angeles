@@ -1,0 +1,60 @@
+.contenedor-contactanos {
+  padding:15px;
+}
+
+.contenedor-titulo-contactanos {
+  color: #4A4A4A;
+  text-align:center;
+}
+
+.contenedor-input-contactanos {
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.input{
+  width: 100%;
+  padding: 15px;
+  background: white;
+  margin-bottom: 20px;
+  border: 2px solid #ab1912;
+  border-radius: 20px;
+  font-size: 15px;
+  outline: none;
+}
+
+.terminos {
+  font-size:18px;
+  text-align: center;
+}
+
+.registro {
+  display: flex;
+  justify-content: center;
+}
+
+.btnRegistro {
+  padding: 14px 35px;
+  border: none;
+  text-decoration: none;
+  background: #df251b;
+  color: white;
+  width: 37%;
+  margin-left: 10px;
+  margin-top: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%)
+}
+
+.pregunta {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.terminos a {
+  color:#ab1912;
+  font-weight:bold;
+  text-decoration: underline;
+}
