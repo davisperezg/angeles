@@ -26,6 +26,8 @@
 .terminos {
   font-size: 18px;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .registro {
