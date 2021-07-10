@@ -80,9 +80,17 @@
   display: block;
 }
 
+.seccion-contenido-ayuda-desktop {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   .enlaces-desktop {
+    display: block;
+  }
+
+  .seccion-contenido-ayuda-desktop {
     display: block;
   }
 
