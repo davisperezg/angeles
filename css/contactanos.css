@@ -1,10 +1,10 @@
 .contenedor-contactanos {
-  padding:15px;
+  padding: 15px;
 }
 
 .contenedor-titulo-contactanos {
-  color: #4A4A4A;
-  text-align:center;
+  color: #4a4a4a;
+  text-align: center;
 }
 
 .contenedor-input-contactanos {
@@ -12,7 +12,7 @@
   padding: 15px;
 }
 
-.input{
+.input {
   width: 100%;
   padding: 15px;
   background: white;
@@ -24,13 +24,14 @@
 }
 
 .terminos {
-  font-size:18px;
+  font-size: 18px;
   text-align: center;
 }
 
 .registro {
   display: flex;
   justify-content: center;
+  margin-top: 15px;
 }
 
 .btnRegistro {
@@ -44,43 +45,58 @@
   margin-top: 20px;
   border-radius: 25px;
   cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%)
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
 .pregunta {
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
 }
 
-.terminos a {
-  color:#ab1912;
-  font-weight:bold;
+.pregunta a {
+  color: #ab1912;
+  font-weight: bold;
   text-decoration: underline;
 }
 
+.terminos a {
+  color: #ab1912;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.terminos a:hover {
+  color: #f9b208;
+  cursor: pointer;
+}
+
+.pregunta a:hover {
+  color: #f9b208;
+  cursor: pointer;
+}
 .enlaces-desktop {
-  display:none;
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
-/* For desktop: */
+  /* For desktop: */
   .enlaces-desktop {
-    display:block;
+    display: block;
   }
 
   .contenedor {
-    background:#fff;
+    background: transparent;
   }
 
   .contenedor-contactanos {
-    background:#fff;
-    width:500px;
-    text-align:center;
+    background: #f5f5f5;
+    width: 500px;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top:50px;
-    margin-bottom:50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 10px;
   }
 
@@ -96,11 +112,10 @@
   }
 
   .input {
-    width:80%;
+    width: 80%;
   }
 
   .btnRegistro:hover {
-    background: #F9B208;
+    background: #f9b208;
   }
-
 }
