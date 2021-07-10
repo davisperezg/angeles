@@ -8,13 +8,14 @@
 
 .contenedor-imagenes-activades {
   width: 100%;
-  height: auto;
+  height: 250px;
   display: flex;
 }
 
 .imagen-actividades {
   width: 50%;
   height: 250px;
+  float: left;
 }
 
 .imagen-actividades img {
@@ -25,7 +26,10 @@
 
 .texto-actvidades {
   width: 50%;
+  float: left;
+  height: 250px;
   display: flex;
+  justify-content: center;
 }
 
 .texto-actvidades p {
@@ -34,6 +38,10 @@
 
 .contenedor-imagenes-activades {
   display: block;
+}
+
+.seccion-imagenes {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
