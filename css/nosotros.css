@@ -7,7 +7,15 @@
 }
 
 .contenendor-nososotros-cuerpo {
-  margin-top: 30px;
+  /* margin-top: 30px; */
+}
+
+.contenendor-nososotros-cuerpo h1 {
+  display: none;
+}
+
+.contenendor-nososotros-cuerpo br {
+  display: none;
 }
 
 .nosotros-imagenes {
@@ -103,6 +111,18 @@
     display: block;
   }
 
+  .contenendor-nososotros-cuerpo {
+    margin-top: 30px;
+  }
+
+  .contenendor-nososotros-cuerpo h1 {
+    display: block;
+  }
+
+  .contenendor-nososotros-cuerpo br {
+    display: block;
+  }
+
   .imagen {
     display: none;
   }
@@ -139,7 +159,7 @@
   }
 
   .contenedor-nosotros {
-    width: 80%;
+    width: 78%;
     margin-left: auto;
     margin-right: auto;
     top: 0;
