@@ -112,7 +112,10 @@
   }
 
   .contenedor-tabla {
+    width: 70%;
     padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .seccion-contenido-ayuda-desktop {
