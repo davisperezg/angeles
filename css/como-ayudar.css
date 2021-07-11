@@ -105,7 +105,10 @@
   }
 
   .contenedor-video-ayudar {
-    /* padding: 20px; */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
   }
 
   .contenedor-tabla {
